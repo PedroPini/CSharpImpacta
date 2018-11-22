@@ -28,6 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TrocoForm));
+            System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem(new string[] {
+            ""}, 5, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0))));
+            System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem(new string[] {
+            ""}, 4, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0))));
+            System.Windows.Forms.ListViewItem listViewItem9 = new System.Windows.Forms.ListViewItem(new string[] {
+            ""}, 3, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0))));
+            System.Windows.Forms.ListViewItem listViewItem10 = new System.Windows.Forms.ListViewItem(new string[] {
+            ""}, 2, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0))));
+            System.Windows.Forms.ListViewItem listViewItem11 = new System.Windows.Forms.ListViewItem(new string[] {
+            ""}, 1, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0))));
+            System.Windows.Forms.ListViewItem listViewItem12 = new System.Windows.Forms.ListViewItem(new string[] {
+            ""}, 0, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0))));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -36,11 +50,18 @@
             this.valorCompraTextBox = new System.Windows.Forms.TextBox();
             this.valorPagoTextBox = new System.Windows.Forms.TextBox();
             this.trocoTextBox = new System.Windows.Forms.TextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.moedasImageList = new System.Windows.Forms.ImageList(this.components);
+            this.moedasListView = new System.Windows.Forms.ListView();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.trocoTextBox);
             this.groupBox1.Controls.Add(this.valorPagoTextBox);
             this.groupBox1.Controls.Add(this.valorCompraTextBox);
@@ -90,6 +111,7 @@
             this.calcularButton.TabIndex = 4;
             this.calcularButton.Text = "C&alcular";
             this.calcularButton.UseVisualStyleBackColor = true;
+            this.calcularButton.Click += new System.EventHandler(this.calcularButton_Click);
             // 
             // valorCompraTextBox
             // 
@@ -97,6 +119,7 @@
             this.valorCompraTextBox.Name = "valorCompraTextBox";
             this.valorCompraTextBox.Size = new System.Drawing.Size(162, 20);
             this.valorCompraTextBox.TabIndex = 1;
+            this.valorCompraTextBox.TextChanged += new System.EventHandler(this.valorCompraTextBox_TextChanged);
             // 
             // valorPagoTextBox
             // 
@@ -104,24 +127,70 @@
             this.valorPagoTextBox.Name = "valorPagoTextBox";
             this.valorPagoTextBox.Size = new System.Drawing.Size(162, 20);
             this.valorPagoTextBox.TabIndex = 2;
+            this.valorPagoTextBox.TextChanged += new System.EventHandler(this.valorPagoTextBox_TextChanged);
             // 
             // trocoTextBox
             // 
             this.trocoTextBox.Location = new System.Drawing.Point(99, 117);
             this.trocoTextBox.Name = "trocoTextBox";
+            this.trocoTextBox.ReadOnly = true;
             this.trocoTextBox.Size = new System.Drawing.Size(162, 20);
             this.trocoTextBox.TabIndex = 3;
+            this.trocoTextBox.TextChanged += new System.EventHandler(this.trocoTextBox_TextChanged);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.Controls.Add(this.moedasListView);
+            this.groupBox2.Location = new System.Drawing.Point(285, 12);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(503, 426);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Troco";
+            // 
+            // moedasImageList
+            // 
+            this.moedasImageList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("moedasImageList.ImageStream")));
+            this.moedasImageList.TransparentColor = System.Drawing.Color.Transparent;
+            this.moedasImageList.Images.SetKeyName(0, "1.png");
+            this.moedasImageList.Images.SetKeyName(1, "5.png");
+            this.moedasImageList.Images.SetKeyName(2, "10.png");
+            this.moedasImageList.Images.SetKeyName(3, "25.png");
+            this.moedasImageList.Images.SetKeyName(4, "50.png");
+            this.moedasImageList.Images.SetKeyName(5, "100.png");
+            // 
+            // moedasListView
+            // 
+            this.moedasListView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.moedasListView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem7,
+            listViewItem8,
+            listViewItem9,
+            listViewItem10,
+            listViewItem11,
+            listViewItem12});
+            this.moedasListView.LargeImageList = this.moedasImageList;
+            this.moedasListView.Location = new System.Drawing.Point(3, 16);
+            this.moedasListView.Name = "moedasListView";
+            this.moedasListView.Size = new System.Drawing.Size(497, 407);
+            this.moedasListView.TabIndex = 2;
+            this.moedasListView.UseCompatibleStateImageBehavior = false;
             // 
             // TrocoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "TrocoForm";
             this.Text = "Troco";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -136,6 +205,9 @@
         private System.Windows.Forms.TextBox trocoTextBox;
         private System.Windows.Forms.TextBox valorPagoTextBox;
         private System.Windows.Forms.TextBox valorCompraTextBox;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.ImageList moedasImageList;
+        private System.Windows.Forms.ListView moedasListView;
     }
 }
 
