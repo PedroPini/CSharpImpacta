@@ -95,15 +95,18 @@
             this.calcularButton.TabIndex = 6;
             this.calcularButton.Text = "Calcular";
             this.calcularButton.UseVisualStyleBackColor = true;
+            this.calcularButton.Click += new System.EventHandler(this.calcularButton_Click);
             // 
             // limparButton
             // 
+            this.limparButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.limparButton.Location = new System.Drawing.Point(264, 314);
             this.limparButton.Name = "limparButton";
             this.limparButton.Size = new System.Drawing.Size(75, 23);
             this.limparButton.TabIndex = 7;
             this.limparButton.Text = "Limpar";
             this.limparButton.UseVisualStyleBackColor = true;
+            this.limparButton.Click += new System.EventHandler(this.limparButton_Click);
             // 
             // clienteTextBox
             // 
@@ -149,6 +152,7 @@
             this.ufComboBox.Name = "ufComboBox";
             this.ufComboBox.Size = new System.Drawing.Size(121, 21);
             this.ufComboBox.TabIndex = 2;
+            this.ufComboBox.SelectedIndexChanged += new System.EventHandler(this.ufComboBox_SelectedIndexChanged);
             // 
             // FreteForm
             // 
