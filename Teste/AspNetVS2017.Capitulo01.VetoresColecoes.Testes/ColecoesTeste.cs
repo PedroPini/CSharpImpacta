@@ -46,6 +46,31 @@ namespace AspNetVS2017.Capitulo01.VetoresColecoes.Testes
 
             
     }
+
+
+        [TestMethod]
+        public void DictionaryTeste()
+        {
+            var feriados = new Dictionary<DateTime, string>();
+            feriados.Add(new DateTime(2018, 12, 25), "Natal");
+            feriados.Add(new DateTime(2019, 1, 1), "Ano Novo");
+            feriados.Add(new DateTime(2019, 1, 25), "Níver SP");
+            //A CHAVE NAO PODE REPETIR
+
+
+            var natal = feriados[new DateTime(2018, 12, 25)];
+
+            foreach (var feriado in feriados)
+            {
+                Console.WriteLine(string.Format($"{feriado.Key.ToShortDateString()} : {feriado.Value}"));
+                //Console.WriteLine(string.Format("{0:dd/MM} : {1}", feriado.Key, feriado.Value));
+                //Console.WriteLine(string.Format("{0} : {1}", feriado.Key.ToString("dd/MM"), feriado.Value));
+            }
+
+            Console.WriteLine(feriados.ContainsKey(Convert.ToDateTime("25/12/2018")));
+            Console.WriteLine(feriados.ContainsValue("Ano Novo"));
+
+        }
         
     }
 }
