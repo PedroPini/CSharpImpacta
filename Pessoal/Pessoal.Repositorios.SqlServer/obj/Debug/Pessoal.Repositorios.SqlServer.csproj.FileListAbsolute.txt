@@ -1,0 +1,9 @@
+C:\Users\no4805\source\repos\ImpactaAspNet\Pessoal.Repositorios.SqlServer\bin\Debug\Pessoal.Repositorios.SqlServer.dll
+C:\Users\no4805\source\repos\ImpactaAspNet\Pessoal.Repositorios.SqlServer\bin\Debug\Pessoal.Repositorios.SqlServer.pdb
+C:\Users\no4805\source\repos\ImpactaAspNet\Pessoal.Repositorios.SqlServer\bin\Debug\Pessoal.Dominio.dll
+C:\Users\no4805\source\repos\ImpactaAspNet\Pessoal.Repositorios.SqlServer\bin\Debug\Pessoal.Dominio.pdb
+C:\Users\no4805\source\repos\ImpactaAspNet\Pessoal.Repositorios.SqlServer\obj\Debug\Pessoal.Repositorios.SqlServer.csprojAssemblyReference.cache
+C:\Users\no4805\source\repos\ImpactaAspNet\Pessoal.Repositorios.SqlServer\obj\Debug\Pessoal.Repositorios.SqlServer.csproj.CoreCompileInputs.cache
+C:\Users\no4805\source\repos\ImpactaAspNet\Pessoal.Repositorios.SqlServer\obj\Debug\Pessoal.Repositorios.SqlServer.csproj.CopyComplete
+C:\Users\no4805\source\repos\ImpactaAspNet\Pessoal.Repositorios.SqlServer\obj\Debug\Pessoal.Repositorios.SqlServer.dll
+C:\Users\no4805\source\repos\ImpactaAspNet\Pessoal.Repositorios.SqlServer\obj\Debug\Pessoal.Repositorios.SqlServer.pdb

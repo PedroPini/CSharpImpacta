@@ -1,0 +1,6 @@
+C:\Users\no4805\source\repos\ImpactaAspNet\Pessoal.Dominio\bin\Debug\Pessoal.Dominio.dll
+C:\Users\no4805\source\repos\ImpactaAspNet\Pessoal.Dominio\bin\Debug\Pessoal.Dominio.pdb
+C:\Users\no4805\source\repos\ImpactaAspNet\Pessoal.Dominio\obj\Debug\Pessoal.Dominio.csprojAssemblyReference.cache
+C:\Users\no4805\source\repos\ImpactaAspNet\Pessoal.Dominio\obj\Debug\Pessoal.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\no4805\source\repos\ImpactaAspNet\Pessoal.Dominio\obj\Debug\Pessoal.Dominio.dll
+C:\Users\no4805\source\repos\ImpactaAspNet\Pessoal.Dominio\obj\Debug\Pessoal.Dominio.pdb
