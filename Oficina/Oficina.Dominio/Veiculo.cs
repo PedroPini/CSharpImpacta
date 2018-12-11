@@ -8,7 +8,17 @@ namespace Oficina.Dominio
 {
     public class Veiculo
     {
+<<<<<<< HEAD
         public int Id { get; set; }
+=======
+        /*
+        public Veiculo()
+        {
+            Id = Guid.NewGuid();
+        } OU
+        */
+        public Guid Id { get; set; } = Guid.NewGuid();
+>>>>>>> 1d888ab68fb8a35959bfe8a5eb3d4e478fa3ff1a
         public string Placa { get; set; }
         public int Ano { get; set; }
         public string Observacao { get; set; }
