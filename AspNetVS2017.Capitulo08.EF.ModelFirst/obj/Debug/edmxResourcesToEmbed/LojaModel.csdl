@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="LojaModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="LojaModelContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Produto" EntityType="LojaModel.Produto" />
+    <EntitySet Name="Categoria" EntityType="LojaModel.Categoria" />
+    <AssociationSet Name="CategoriaProduto" Association="LojaModel.CategoriaProduto">
+      <End Role="Categoria" EntitySet="Categoria" />
+      <End Role="Produto" EntitySet="Produto" />
+    </AssociationSet>
+    <EntitySet Name="Fornecedor" EntityType="LojaModel.Fornecedor" />
+    <AssociationSet Name="CategoriaFornecedor" Association="LojaModel.CategoriaFornecedor">
+      <End Role="Categoria" EntitySet="Categoria" />
+      <End Role="Fornecedor" EntitySet="Fornecedor" />
+    </AssociationSet>
+    <EntitySet Name="ProdutoImagem" EntityType="LojaModel.ProdutoImagem" />
+    <AssociationSet Name="ProdutoProdutoImagem" Association="LojaModel.ProdutoProdutoImagem">
+      <End Role="Produto" EntitySet="Produto" />
+      <End Role="ProdutoImagem" EntitySet="ProdutoImagem" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Produto">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nome" Type="String" Nullable="false" MaxLength="200" Unicode="true" />
+    <Property Name="Preco" Type="Decimal" Nullable="false" Precision="9" Scale="2" />
+    <NavigationProperty Name="Categoria" Relationship="LojaModel.CategoriaProduto" FromRole="Produto" ToRole="Categoria" />
+    <NavigationProperty Name="ProdutoImagem" Relationship="LojaModel.ProdutoProdutoImagem" FromRole="Produto" ToRole="ProdutoImagem" />
+  </EntityType>
+  <EntityType Name="Categoria">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nome" Type="String" Nullable="false" Unicode="true" MaxLength="200" />
+    <NavigationProperty Name="Produto" Relationship="LojaModel.CategoriaProduto" FromRole="Categoria" ToRole="Produto" />
+    <NavigationProperty Name="Fornecedor" Relationship="LojaModel.CategoriaFornecedor" FromRole="Categoria" ToRole="Fornecedor" />
+  </EntityType>
+  <Association Name="CategoriaProduto">
+    <End Type="LojaModel.Categoria" Role="Categoria" Multiplicity="1" />
+    <End Type="LojaModel.Produto" Role="Produto" Multiplicity="*" />
+  </Association>
+  <EntityType Name="Fornecedor">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nome" Type="String" Nullable="false" MaxLength="200" Unicode="true" />
+    <NavigationProperty Name="Categoria" Relationship="LojaModel.CategoriaFornecedor" FromRole="Fornecedor" ToRole="Categoria" />
+  </EntityType>
+  <Association Name="CategoriaFornecedor">
+    <End Type="LojaModel.Categoria" Role="Categoria" Multiplicity="*" />
+    <End Type="LojaModel.Fornecedor" Role="Fornecedor" Multiplicity="*" />
+  </Association>
+  <EntityType Name="ProdutoImagem">
+    <Key>
+      <PropertyRef Name="Produto_Id" />
+    </Key>
+    <Property Name="Produto_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="None" />
+    <Property Name="Imagem" Type="Binary" Nullable="false" MaxLength="Max" />
+    <NavigationProperty Name="Produto" Relationship="LojaModel.ProdutoProdutoImagem" FromRole="ProdutoImagem" ToRole="Produto" />
+  </EntityType>
+  <Association Name="ProdutoProdutoImagem">
+    <End Type="LojaModel.Produto" Role="Produto" Multiplicity="1" />
+    <End Type="LojaModel.ProdutoImagem" Role="ProdutoImagem" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Produto">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProdutoImagem">
+        <PropertyRef Name="Produto_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,7 @@
+C:\Users\no4805\source\repos\ImpactaAspNet\AspNetVS2017.Capitulo08.EF.ModelFirst\bin\Debug\AspNetVS2017.Capitulo08.EF.ModelFirst.dll.config
+C:\Users\no4805\source\repos\ImpactaAspNet\AspNetVS2017.Capitulo08.EF.ModelFirst\bin\Debug\AspNetVS2017.Capitulo08.EF.ModelFirst.dll
+C:\Users\no4805\source\repos\ImpactaAspNet\AspNetVS2017.Capitulo08.EF.ModelFirst\bin\Debug\AspNetVS2017.Capitulo08.EF.ModelFirst.pdb
+C:\Users\no4805\source\repos\ImpactaAspNet\AspNetVS2017.Capitulo08.EF.ModelFirst\obj\Debug\AspNetVS2017.Capitulo08.EF.ModelFirst.csprojAssemblyReference.cache
+C:\Users\no4805\source\repos\ImpactaAspNet\AspNetVS2017.Capitulo08.EF.ModelFirst\obj\Debug\AspNetVS2017.Capitulo08.EF.ModelFirst.csproj.CoreCompileInputs.cache
+C:\Users\no4805\source\repos\ImpactaAspNet\AspNetVS2017.Capitulo08.EF.ModelFirst\obj\Debug\AspNetVS2017.Capitulo08.EF.ModelFirst.dll
+C:\Users\no4805\source\repos\ImpactaAspNet\AspNetVS2017.Capitulo08.EF.ModelFirst\obj\Debug\AspNetVS2017.Capitulo08.EF.ModelFirst.pdb
