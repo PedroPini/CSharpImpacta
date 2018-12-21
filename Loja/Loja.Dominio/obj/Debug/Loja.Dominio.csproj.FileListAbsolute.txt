@@ -1,0 +1,12 @@
+C:\Users\no4802\source\repos\ImpactaAspNet\ImpactaAspNet\Loja.Dominio\bin\Debug\Loja.Dominio.dll
+C:\Users\no4802\source\repos\ImpactaAspNet\ImpactaAspNet\Loja.Dominio\bin\Debug\Loja.Dominio.pdb
+C:\Users\no4802\source\repos\ImpactaAspNet\ImpactaAspNet\Loja.Dominio\obj\Debug\Loja.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\no4802\source\repos\ImpactaAspNet\ImpactaAspNet\Loja.Dominio\obj\Debug\Loja.Dominio.dll
+C:\Users\no4802\source\repos\ImpactaAspNet\ImpactaAspNet\Loja.Dominio\obj\Debug\Loja.Dominio.pdb
+C:\Users\no4802\source\repos\ImpactaAspNet\ImpactaAspNet\Loja.Dominio\obj\Debug\Loja.Dominio.csprojAssemblyReference.cache
+C:\Users\no4801\source\repos\VisualStudioWebDevelopment\ImpactaAspNet\Loja.Dominio\bin\Debug\Loja.Dominio.dll
+C:\Users\no4801\source\repos\VisualStudioWebDevelopment\ImpactaAspNet\Loja.Dominio\bin\Debug\Loja.Dominio.pdb
+C:\Users\no4801\source\repos\VisualStudioWebDevelopment\ImpactaAspNet\Loja.Dominio\obj\Debug\Loja.Dominio.csprojAssemblyReference.cache
+C:\Users\no4801\source\repos\VisualStudioWebDevelopment\ImpactaAspNet\Loja.Dominio\obj\Debug\Loja.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\no4801\source\repos\VisualStudioWebDevelopment\ImpactaAspNet\Loja.Dominio\obj\Debug\Loja.Dominio.dll
+C:\Users\no4801\source\repos\VisualStudioWebDevelopment\ImpactaAspNet\Loja.Dominio\obj\Debug\Loja.Dominio.pdb
